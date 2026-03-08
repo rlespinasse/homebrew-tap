@@ -3,33 +3,33 @@ cask "github-actions-toolbox" do
   name "github-actions-toolbox"
   desc "CLI toolbox for GitHub Actions"
   homepage "https://github.com/rlespinasse/github-actions-toolbox"
-  version "1.0.0"
+  version "1.0.1"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "github-actions-toolbox"
+  binary "ghat"
 
   on_macos do
     on_intel do
       url "https://github.com/rlespinasse/github-actions-toolbox/releases/download/v#{version}/github-actions-toolbox_#{version}_darwin_amd64.tar.gz"
-      sha256 "2045eada199203a92177b17051c91365c23fab0a3fc394c1c2e7d996d40e9963"
+      sha256 "b903e1afc2ffab2557af014246ccc4aa594804357dc2773d3dbc4c17f0acb2ac"
     end
     on_arm do
       url "https://github.com/rlespinasse/github-actions-toolbox/releases/download/v#{version}/github-actions-toolbox_#{version}_darwin_arm64.tar.gz"
-      sha256 "db6e12a2dd78152bc320c0a390284dbf9d579866f543d08ff43eb89b33319008"
+      sha256 "6c7e67a0be135156f4f2db819eee09027f12341e32c85f18558a3f0b721b2066"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/rlespinasse/github-actions-toolbox/releases/download/v#{version}/github-actions-toolbox_#{version}_linux_amd64.tar.gz"
-      sha256 "309a42c2ea5e89410d2bb4f279b5c9b7158c5bf9bd11dd50ad5d2a6c8ca78cd6"
+      sha256 "1cf096722bc66aa1487b77ebe63686f2d15e2213d59f32896a1d6dba58c422e0"
     end
     on_arm do
       url "https://github.com/rlespinasse/github-actions-toolbox/releases/download/v#{version}/github-actions-toolbox_#{version}_linux_arm64.tar.gz"
-      sha256 "3ec8a27234e3059d7b71cfae5b2940c28657b0aae2ee79cc392841e4daa7156f"
+      sha256 "95df82e2d4c68540de55d2ea159909bd1ef0c1a1a8579f5882262e6c4e3edc4e"
     end
   end
 
